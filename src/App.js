@@ -35,15 +35,17 @@ const getSearch = e =>{
         <input type="text" className="search_input" value={search} onChange={updateSearch}/>
         <button type="submit" className="search_button">Search</button>
       </form>
-      {recipies.map(recipe =>( 
-        <Recipie 
-        key = {recipe.recipe.label}
-        title= {recipe.recipe.label}
-        calories= {recipe.recipe.calories}
-        image= {recipe.recipe.image}
-        ingredients = {recipe.recipe.ingredients}
-        />
-    )) }
+        <div className="recipe_book">
+          {recipies.map(recipe =>(
+          <Recipie 
+          key = {recipe.recipe.label}
+          title= {recipe.recipe.label}
+          calories= {recipe.recipe.calories}
+          image= {recipe.recipe.image}
+          ingredients = {recipe.recipe.ingredients}
+          />
+          )) }
+        </div>
     </div>
   );
 };

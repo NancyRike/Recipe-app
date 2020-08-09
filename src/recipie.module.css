@@ -1,0 +1,17 @@
+.recipie{
+    border-radius: 10%;
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    box-shadow: 2px 5px 1px grey;
+
+}
+.image{
+    border-radius: 50%;
+    height: 15em;
+    width: 15em;
+}

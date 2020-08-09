@@ -1,15 +1,16 @@
 import React from 'react';
+import styling from './recipie.module.css';
 
 const Recipie = ({title,calories,image, ingredients}) => {
     return(
-        <div>
+        <div className={styling.recipie}>
             <h1>{title}</h1>
             <ol>{ingredients.map(ingredient => (
                 <li>{ingredient.text}</li>
                 ))}
             </ol>
             <p>{calories}</p>
-            <img src={image} alt=""/>
+            <img className={styling.image} src={image} alt=""/>
         </div>
     )
 }
