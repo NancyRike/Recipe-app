@@ -1,9 +1,26 @@
-.App{
+ .App{
    min-height: 100vh;
    /* background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%); */
    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
 }
-.search_button{
+.recipie{
+   border-radius: 10%;
+   background-color: white;
+   /* margin: 10px; */
+   /* display: flex;
+   flex-direction: column;
+   justify-content: space-around; */
+   align-items: center;
+   /* width: 40%; */
+   box-shadow: 2px 5px 1px grey;
+
+}
+.image{
+   border-radius: 50%;
+   height: 15em;
+   width: 15em; 
+}
+/*.search_button{
    background: #1450c0;
    border: none;
    padding: 1em 2em;
@@ -24,4 +41,4 @@
   justify-content: space-around;
   flex-wrap: wrap;
     
-}
+} */

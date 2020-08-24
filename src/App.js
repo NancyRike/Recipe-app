@@ -30,21 +30,23 @@ const getSearch = e =>{
 
 
   return (
-    <div className = "App">
-      <form onSubmit={getSearch} className="search_form">
-        <input type="text" className="search_input" value={search} onChange={updateSearch}/>
-        <button type="submit" className="search_button">Search</button>
+    <div className = "App container-fluid">
+      <form onSubmit={getSearch} className="search_form input-group p-3 px-5">
+        <input type="text" className="search_input form-control" value={search} onChange={updateSearch}/>
+        <button type="submit" className="search_button input-group-text btn btn-secondary">Search</button>
       </form>
-        <div className="recipe_book">
-          {recipies.map(recipe =>(
-          <Recipie 
-          key = {recipe.recipe.label}
-          title= {recipe.recipe.label}
-          calories= {recipe.recipe.calories}
-          image= {recipe.recipe.image}
-          ingredients = {recipe.recipe.ingredients}
-          />
-          )) }
+        <div className="row">
+            {recipies.map(recipe =>(
+            <div className="col-md-4 d-flex justify-content-around mb-4 flex-wrap">
+            <Recipie
+            key = {recipe.recipe.label}
+            image= {recipe.recipe.image}
+            title= {recipe.recipe.label}
+            calories= {recipe.recipe.calories}
+            ingredients = {recipe.recipe.ingredients}
+            />
+            </div>
+            )) }
         </div>
     </div>
   );
